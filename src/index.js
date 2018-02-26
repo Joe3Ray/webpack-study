@@ -1,6 +1,10 @@
 const React = require('react')
-const a = require('./a')
-const b = require('./b')
 
 /* eslint no-console: 0 */
-console.log(a, b, React)
+async function exec () {
+  const a = await import(/* webpackChunkName: "aaa" */ './a')
+  const b = await import(/* webpackChunkName: "bbb" */ './b')
+  console.log(a, b, React)
+}
+
+exec()

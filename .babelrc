@@ -1,9 +1,17 @@
 {
   "presets": [
+    ["react"],
     ["env", {
       "targets": {
-        "node": "8.9.0"
-      }
+        "browsers": ["Android > 4.0", "iOS > 6.0"]
+      },
+      "modules": false
     }]
+  ],
+  "plugins": [
+      "transform-runtime",
+      "syntax-dynamic-import",
+      "transform-class-properties",
+      "transform-object-rest-spread"
   ]
 }
