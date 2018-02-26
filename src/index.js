@@ -1,5 +1,6 @@
+const React = require('react')
 const a = require('./a')
 const b = require('./b')
 
 /* eslint no-console: 0 */
-console.log(a, b)
+console.log(a, b, React)
